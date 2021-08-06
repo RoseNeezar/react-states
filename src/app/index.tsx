@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Route, Router, Switch } from "react-router-dom";
+import CanvasPage from "./pageComponent/canvas/canvasPage";
 import MainPage from "./pageComponent/MainPage";
 import Recoil from "./pageComponent/recoilPage/RecoilPage";
 import ZustandPage from "./pageComponent/zustandPage/ZustandPage";
@@ -24,6 +25,7 @@ const App = () => {
                 <Route exact path="/" component={MainPage} />
                 <Route exact path="/recoil" component={Recoil} />
                 <Route exact path="/zustand" component={ZustandPage} />
+                <Route exact path="/draw" component={CanvasPage} />
               </Switch>
             </>
           )}
