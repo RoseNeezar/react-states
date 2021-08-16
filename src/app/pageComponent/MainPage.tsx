@@ -29,6 +29,12 @@ const MainPage = () => {
         >
           Canvas
         </button>
+        <button
+          onClick={() => useNavigate?.push("/rxjs")}
+          className="w-40 p-3 font-bold text-gray-200 bg-pink-800 rounded-xl"
+        >
+          Rxjs
+        </button>
       </div>
     </div>
   );
