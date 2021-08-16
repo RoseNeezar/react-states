@@ -3,6 +3,7 @@ import { Route, Router, Switch } from "react-router-dom";
 import CanvasPage from "./pageComponent/canvas/canvasPage";
 import MainPage from "./pageComponent/MainPage";
 import Recoil from "./pageComponent/recoilPage/RecoilPage";
+import RxjsPage from "./pageComponent/Rxjs/RxjsPage";
 import ZustandPage from "./pageComponent/zustandPage/ZustandPage";
 import useNavigate from "./utils/useNavigate";
 
@@ -26,6 +27,7 @@ const App = () => {
                 <Route exact path="/recoil" component={Recoil} />
                 <Route exact path="/zustand" component={ZustandPage} />
                 <Route exact path="/draw" component={CanvasPage} />
+                <Route exact path="/rxjs" component={RxjsPage} />
               </Switch>
             </>
           )}
